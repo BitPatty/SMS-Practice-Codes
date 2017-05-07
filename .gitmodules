@@ -1,0 +1,6 @@
+[submodule "res/dol2elf"]
+	path = res/dol2elf
+	url = https://github.com/randomstuff/dol2elf
+[submodule "res/Super-Mario-Sunshine-C-Kit"]
+	path = res/Super-Mario-Sunshine-C-Kit
+	url = https://github.com/BitPatty/Super-Mario-Sunshine-C-Kit
