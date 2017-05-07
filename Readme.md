@@ -1,9 +1,9 @@
-##About
+## About
 
 This repository contains practice codes for Super Mario Sunshine.
 
 
-##List of codes 
+## List of codes 
 
 | File                   | Description                                                                                                   | Version |
 |------------------------|---------------------------------------------------------------------------------------------------------------|---------|
