@@ -11,10 +11,8 @@ This repository contains practice codes for Super Mario Sunshine.
 | Disable_Blue_Coin_Flag | Prevents the game from setting the blue coin flag, which makes them respawn after reentering the level        | all     |
 | DPad_Functions         | Save state and dialog skip toggle                                                                             | all     |
 | FMV_Skips              | Allows to skip all FMVs without having to watch them first                                                    | all     |
-| IGT_Level_Select       | Experimental level select with in game timer flags                                                            | NTSC-U  |
-| IGT_Main               | Ingame timer                                                                                                  | NTSC-U  |
-| IGT_ShineGet_Flag      | Sets game timer flag on shine get                                                                             | NTSC-U  |
+| Ingame_Timer       	|  Ingame Timer (includes own level select)                                               						 | NTSC-U, NTSC-J  |
 | Infinite_Lives         | Locks life count at 99                                                                                        | all     |
 | Level_Select           | Allows to enter levels via exit stage or file select                                                          | all     |
-| Mute_BGM               | Mutes background music (sets volume to 0)                                                                     | all     |
+| Mute_BGM               | Mutes background music (sets volume to 0)                                                                     | NTSC-U, NTSC-J  |
 | Switch_Nozzles         | Allows to switch secondary nozzle via B + D-Pad                                                               | all     |
