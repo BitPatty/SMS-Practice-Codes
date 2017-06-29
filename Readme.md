@@ -9,7 +9,7 @@ You can find the gecko codes and GCT cheatfiles under bin/.
 
 | File                   | Description                                                                                                   | Version |
 |------------------------|---------------------------------------------------------------------------------------------------------------|---------|
-| Cut_Errormessage       | Cuts the default error message to display "!!!" instead of the full error message by 0 terminating it earlier | all     |
+| Cut_Errormessage       | Cuts the default error message to display "!!!" instead of the full error message by 0 terminating it earlier (requires DPad_Functions) | all     |
 | Disable_Blue_Coin_Flag | Prevents the game from setting the blue coin flag, which makes them respawn after reentering the level        | all     |
 | DPad_Functions         | Save state and dialog skip toggle, Switch Nozzles in combination with B                                       | all     |
 | FMV_Skips              | Allows to skip all FMVs without having to watch them first                                                    | all     |
@@ -22,6 +22,14 @@ You can find the gecko codes and GCT cheatfiles under bin/.
 ## Contribute 
 
 Open a Pull request or message me at https://twitter.com/psychonauter or via Discord (psychonauter#6318) to receive collaborator status or to add code. 
+
+## Compatibility
+
+Do not combine the following codes together (only use one of them):
+| Code A                            | Code B                               |                                                                          
+|-----------------------------------|--------------------------------------|
+| Insert Timer       	 			|  Insert Timer that resets on Delfino |
+| Level Select with Delfino Secrets |  Level Select with Stopwatch Flags   |
 
 ## Contributions
 
