@@ -26,6 +26,7 @@ Open a Pull request or message me at https://twitter.com/psychonauter or via Dis
 ## Compatibility
 
 Do not combine the following codes together (only use one of them):
+
 | Code A                            | Code B                               |                                                                          
 |-----------------------------------|--------------------------------------|
 | Insert Timer       	 			|  Insert Timer that resets on Delfino |
