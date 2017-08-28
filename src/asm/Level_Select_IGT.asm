@@ -29,6 +29,7 @@ ori r7, r7, 0x02A6
 stw r7, 0(r6)
 lbz r6, 1(r5)		
 lhz r7, 2(r5)	
+rlwinm r7, r7, 0, 0xFFFFFEFF
 cmpwi r6, 0			  
 bne- 0x18				 
 cmpwi r7, 0				
