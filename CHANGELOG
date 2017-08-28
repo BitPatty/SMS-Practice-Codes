@@ -1,0 +1,54 @@
+==============
+  Changelog
+==============
+
+Original Level Select Code by Dan Salvato & ParadoxKarl: https://pastebin.com/4KpRRuR5
+Original Save States by Dan Salvato: https://pastebin.com/WdbjTxKH
+
+* JAN 20, 2017
+
+    * Added Airstrip reds, Gelato Pipe, Pachinko, Grass Pipe, Lilypad and Jail Secret to Level Select
+	* Added the direction Mario is facing to the save states
+	* Added Dialogue Skip
+	* Added FMV Skip
+	* Added 99 Lives
+	* Added code to prevent the game from setting the blue coin flags
+	
+* JAN 22, 2017 
+
+	* Fixed JP resetting when switching Episodes in Pinna
+	* Added Petey, King Boo, Eel, Sandbird, Blooper Safari and Corona to Level Select
+	* Added Reloading in Sirena spawning in the hotel if available to Level Select
+	* Added Nozzle Switch
+
+* MAR 12, 2017 
+	
+	* Added C-Kit Ingame Timer for US
+	* Added Mute_BGM
+	
+* MAR 17, 2017 
+
+    * Fixed Mute_BGM crashing the game in Pinna
+	
+* MAY 7, 2017 
+
+	* Uploaded codes to Github
+	
+* May 25, 2017 
+
+	* Added Ingame_Timer for US and JP
+	* Removed obsolete C-Kit Ingame Timer
+
+* May 27, 2017 
+
+	* Fixed Mute_BGM for PAL 
+	* Added Ingame_Timer for PAL
+	* Merged Switch_Nozzles with DPad_Functions
+	* Made all codes UPPERCASE
+
+* August 28, 2017
+
+	* Fixed Pinna 1 resets for US
+	* Fixed Balloon count positioning for Pinna 8
+	* Fixed timer for levels with existing timers
+	* Modified level select to prevent it from resetting when mashing or holding A
