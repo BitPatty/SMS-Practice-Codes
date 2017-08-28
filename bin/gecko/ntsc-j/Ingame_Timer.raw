@@ -1,12 +1,12 @@
-$Keep Stopwatch running during breaks [Psychonauter]
+$Keep Stopwatch running during breaks 
 04092A78 7C9E2378
 04092A7C 7C1F0378
 
-$Keep Stopwatch on screen [Psychonauter]
+$Keep Stopwatch on screen
 0420BDF8 60000000
 0420E8A4 60000000
 
-$Save/Load Stopwatch [Psychonauter]
+$Save/Load Stopwatch 
 C209294C 00000008
 3DE0817F 61EF0100
 820F0000 2C100002
@@ -17,12 +17,12 @@ C209294C 00000008
 909F002C 920F0000
 39E00000 00000000
 
-$Set timer difference to 0 when starting new watch [Psychonauter]
+$Set timer difference to 0 when starting new watch 
 C20E1E54 00000002
 38800000 38600000
 909E00CC 00000000
 
-$Stop Timer on Shine touch [Psychonauter]
+$Stop Timer on Shine touch 
 C21953A8 00000007
 7DE802A6 3C608074
 60639F00 7FB0EB78
@@ -32,10 +32,10 @@ C21953A8 00000007
 39E00000 3A000000
 4E800020 00000000
 
-$Disable Stop Stopwatch [Psychonauter] 
+$Disable Stop Stopwatch  
 04092968 4E800020
 
-$Insert Timer [Psychonauter] 
+$Insert Timer  
 040E1F10 60000000
 040E1D9C 60000000
 040E1B6C 60000000
@@ -64,7 +64,7 @@ C220A5A0 0000000E
 3A000000 800100CC
 60000000 00000000
 
-$Insert Timer that resets on Delfino [Psychonauter, Dan Salvato, ParadoxKarl]
+$Insert Timer that resets on Delfino
 040E1F10 60000000
 040E1D9C 60000000
 040E1B6C 60000000
@@ -103,7 +103,7 @@ C220A5A0 00000018
 39E00000 3A000000
 800100CC 00000000
 
-$Level Select with Stopwatch flags [Psychonauter]
+$Level Select with Stopwatch flags 
 C20FA19C 0000007B
 3C60803E 60636010
 3CA08040 60A50D80
