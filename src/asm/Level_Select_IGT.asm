@@ -241,7 +241,7 @@ bne- 0x0C
 li r9,4					
 b loadStage				
 cmpwi r4,1287		
-bne+ loadStage			 
+bne+ done			 
 li r9,5					
 b loadStage				
 
