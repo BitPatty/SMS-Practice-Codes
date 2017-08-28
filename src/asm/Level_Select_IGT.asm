@@ -120,9 +120,12 @@ bne- 0x0C
 li r9, 0x3900			  
 b loadStage				
 cmpwi r6, 8 		
-bne- done 				
+bne- 0x0C			
 li r9, 0x3700			
-b loadStage				
+b loadStage		
+cmpwi r6, 13
+li r9, 0x3A00
+b loadStage
 
 checkZ:
 
