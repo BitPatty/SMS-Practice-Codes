@@ -2,7 +2,7 @@
 
 This repository contains practice codes for Super Mario Sunshine. More Info can be found here: https://www.speedrun.com/sms/thread/ue3g9
 
-You can find the gecko codes and GCT cheatfiles under bin/.
+You can find the gecko codes and GCT cheatfiles under bin/. You can generate your own cheatfiles for most codes here: https://bitpatty.github.io/gctGenerator/
 
 
 ## List of codes 
@@ -17,6 +17,9 @@ You can find the gecko codes and GCT cheatfiles under bin/.
 | Infinite_Lives         | Locks life count at 99                                                                                        | all     |
 | Level_Select           | Allows to enter levels via exit stage or file select                                                          | all     |
 | Mute_BGM               | Mutes background music (sets volume to 0)                                                                     | all 	   |
+| Fast Any%              | Loads stages in Any% order                                                                    				 | NTSC-U  |
+| Stage_Randomizer       | Loads stages in randomized order                                                                              | NTSC-U  |
+| Replace_Episode_Names_With_ID    | Replaces episode names with the episode number during the demo                                      | NTSC-U  |
 
 
 ## Contribute 
@@ -43,7 +46,11 @@ The following people/collectives contributed directly or indirectly to the codes
     * Save States, 
     * FMV Skips, 
     * Infinite Lives, 
-    * Mute BGM
+    * Mute BGM,
+	* Fast Any%,
+	* Replace Episode names with ID
+* Noki Doki (aka Qbe Root) https://twitter.com/Qbe_Root
+	* Stage Randomizer
 * Dan Salvato (aka internetexplorer6) https://twitter.com/dansalvato
     * Level Select, 
     * Save States 
