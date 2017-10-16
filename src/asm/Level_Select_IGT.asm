@@ -214,6 +214,8 @@ add r8,r8,r9
 stw r8,0(r3)
 lis r3,-32385		
 stw r8,0(r3)
+lwz r3,-0x6060(r13)
+stb r9,0x00DF(r3)
 b done
 
 setupPinna: 
