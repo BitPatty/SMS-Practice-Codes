@@ -204,6 +204,8 @@ add r8,r8,r9		#store next stage
 stw r8,0(r3)
 lis r3,-32385		#backup next stage for reset 
 stw r8,0(r3)
+lwz r3,-0x6060(r13)	#set episode flag (use -0x6138 for PAL or -0x6830 for JP)
+stb r9,0x00DF(r3)
 b done
 
 setupPinna: 
