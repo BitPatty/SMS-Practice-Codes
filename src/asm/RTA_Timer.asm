@@ -13,7 +13,14 @@ cmpwi r4, 1
 ble- checkInput
 cmpwi r4, 13
 beq- setupPinna
-b done
+cmpwi r4, 0xE 
+bne+ done
+lhz r4, -6(r3)
+cmpwi r4, 0x604
+bne+ done
+li r8, 0xE01
+li r9, 0
+b loadStage
 
 checkInput:
 
