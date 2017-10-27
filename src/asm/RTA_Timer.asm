@@ -264,9 +264,9 @@ beq- resetStopwatch
 lbz r4, 1(r6)
 cmpwi r4, 1
 bne+ done
-lis r6, 0x803E
-ori r6, r6, 0x9710
-lbz r4, 2(r6)
+lis r5, 0x803E
+ori r5, r5, 0x9710
+lbz r4, 2(r5)
 cmpwi r4, 7
 beq- done
 cmpwi r4, 9
