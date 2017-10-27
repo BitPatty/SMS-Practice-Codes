@@ -1,3 +1,12 @@
+##
+#
+#	This is the full source of the new (unreleased) ingame timer (NTSC-U)
+#   The timer starts on the last black frame after the loading screen
+#   and ends on the frame the "Shine Get" animation starts.
+#   This code is inspired by the X-Cam timer of Super Mario 64.
+#
+##
+
 Level Select inj@802A6710
 
 lis r3, 0x803E
@@ -45,67 +54,67 @@ beq- done
 b checkZ
 cmpwi r6, 9
 beq- checkSpecial
-cmpwi r6,8
+cmpwi r6, 8
 bne- 0x0C
-li r8,512
+li r8, 512
 b checkEpisode
-cmpwi r6,10
+cmpwi r6, 10
 bne- 0x0C
-li r8,768
+li r8, 768
 b checkEpisode
-cmpwi r6,2
+cmpwi r6, 2
 bne- 0x0C
-li r8,1024
+li r8, 1024
 b checkEpisode
-cmpwi r6,6
+cmpwi r6, 6
 bne- 0x0C
-li r8,1280
+li r8, 1280
 b checkEpisode
-cmpwi r6,4
+cmpwi r6, 4
 bne- 0x0C
-li r8,1536
+li r8, 1536
 b checkEpisode
-cmpwi r6,5
+cmpwi r6, 5
 bne- 0x0C
-li r8,2048
+li r8, 2048
 b checkEpisode
-cmpwi r6,1
+cmpwi r6, 1
 bne- done
-li r8,2304
+li r8, 2304
 
 checkEpisode:
 
-cmpwi r7,0
+cmpwi r7, 0
 bne- 0x0C
-li r9,0
+li r9, 0
 b loadStage
-cmpwi r7,64
+cmpwi r7, 64
 bne- 0x0C
-li r9,1
+li r9, 1
 b loadStage
-cmpwi r7,32
+cmpwi r7, 32
 bne- 0x0C
-li r9,2
+li r9, 2
 b loadStage
-cmpwi r7,96
+cmpwi r7, 96
 bne- 0x0C
-li r9,3
+li r9, 3
 b loadStage
-cmpwi r7,16
+cmpwi r7, 16
 bne- 0x0C
-li r9,4
+li r9, 4
 b loadStage
-cmpwi r7,80
+cmpwi r7, 80
 bne- 0x0C
-li r9,5
+li r9, 5
 b loadStage
-cmpwi r7,48
+cmpwi r7, 48
 bne- 0x0C
-li r9,6
+li r9, 6
 b loadStage
-cmpwi r7,112
+cmpwi r7, 112
 bne- 0x0C
-li r9,7
+li r9, 7
 b loadStage
 cmpwi r7, 0x400
 bne- done
@@ -150,7 +159,7 @@ li r8, 258
 
 loadSpecialStage:
 
-li r9,0
+li r9, 0
 b loadStage
 
 checkSpecial:
@@ -216,46 +225,47 @@ li r8, 0
 
 loadStage:
 
-add r8,r8,r9
-stw r8,0(r3)
-lis r3,0x817F
-stw r8,0(r3)
-lwz r3,-0x6060(r13)
-stb r9,0x00DF(r3)
+add r8, r8, r9
+stw r8, 0(r3)
+lis r3, 0x817F
+stw r8, 0(r3)
+lwz r3, -0x6060(r13)
+rlwinm r9, r8, 0, 0xFF
+stb r9, 0x00DF(r3)
 b done
 
 setupPinna:
 
-li r8,3328
-lwz r4,-4(r3)
-cmpwi r4,1280
+li r8, 3328
+lwz r4, -4(r3)
+cmpwi r4, 1280
 bne- 0x0C
-li r9,0
+li r9, 0
 b loadStage
-cmpwi r4,1282
+cmpwi r4, 1282
 bne- 0x0C
-li r9,1
+li r9, 1
 b loadStage
-cmpwi r4,1284
+cmpwi r4, 1284
 bne- 0x0C
-li r9,2
+li r9, 2
 b loadStage
-cmpwi r4,1285
+cmpwi r4, 1285
 bne- 0x0C
-li r9,3
+li r9, 3
 b loadStage
-cmpwi r4,1286
+cmpwi r4, 1286
 bne- 0x0C
-li r9,4
+li r9, 4
 b loadStage
-cmpwi r4,1287
+cmpwi r4, 1287
 bne+ done
-li r9,5
+li r9, 5
 b loadStage
 
 done:
 
-lwz r3,32(r31)
+lwz r3, 32(r31)
 
 
 
@@ -320,17 +330,17 @@ beq+ done
 li r4, 0
 stw r4, 0xC(r3)
 mflr r15
-lis r3,0x8056
-ori r3,r3,0xDD00
-mr r16,r29
-lis r29,0x8028
-ori r29,r29,0xE604
+lis r3, 0x8056
+ori r3, r3, 0xDD00
+mr r16, r29
+lis r29, 0x8028
+ori r29, r29, 0xE604
 mtlr r29
 blrl
 mtlr r15
-mr r29,r16
-li r15,0
-li r16,0
+mr r29, r16
+li r15, 0
+li r16, 0
 
 done:
 lis r3, 0x803A
@@ -340,21 +350,21 @@ lis r3, 0x803A
 Save/Load Stopwatch inj@8034802C
 
 
-lis r15,0x817F
-ori r15,r15,0x0100
+lis r15, 0x817F
+ori r15, r15, 0x0100
 lbz r16, 0(r15)
 cmpwi r16, 1
 beq- done
-lwz r3,4(r15)
-lwz r4,8(r15)
+lwz r3, 4(r15)
+lwz r4, 8(r15)
 
 done:
 li r16, 0
 stb r16, 0(r15)
 stw r3, 4(15)
 stw r4, 8(r15)
-stw r4,44(r31)
-li r15,0
+stw r4, 44(r31)
+li r15, 0
 
 ====================================================
 
@@ -418,8 +428,8 @@ cmpwi r5, 1541
 beq- 0x14
 cmpwi r5, 2053
 beq- 0x0C
-li r4,0
-li r3,0
+li r4, 0
+li r3, 0
 stw r4, 204(r30)
 nop
 

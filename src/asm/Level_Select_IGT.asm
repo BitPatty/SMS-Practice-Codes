@@ -1,3 +1,10 @@
+##
+#
+#	This is the level Select code used for the legacy ingame timer (NTSC-U)
+#   It can also be used as standalone level select.
+#
+##
+
 lis r3, 0x803E			
 ori r3, r3, 0x9710	
 lis r5, 0x8040
@@ -11,10 +18,14 @@ cmpwi r4, 1
 ble- checkInput			
 cmpwi r4, 13			
 beq- setupPinna				
-cmpwi r4, 7 			
-beq- setupHotel				
-stw r7, 0(r6)
-b done						
+cmpwi r4, 0xE 
+bne+ done
+lhz r4, -6(r3)
+cmpwi r4, 0x604
+bne+ done
+li r8, 0xE01
+li r9, 0
+b loadStage					
 
 checkInput: 
 
@@ -215,6 +226,7 @@ stw r8,0(r3)
 lis r3,-32385		
 stw r8,0(r3)
 lwz r3,-0x6060(r13)
+rlwinm r9,r8,0,0xFF
 stb r9,0x00DF(r3)
 b done
 
@@ -245,36 +257,7 @@ b loadStage
 cmpwi r4,1287		
 bne+ done			 
 li r9,5					
-b loadStage				
-
-setupHotel:
-
-li r8, 0x700 		
-lwz r4, -4(r3)		
-cmpwi r4,0x601		
-bne- 0x0C				
-li r9,0					 
-b loadStage				
-cmpwi r4,0x602		
-bne- 0x0C				
-li r9,1					
-b loadStage				
-cmpwi r4,0x603 		
-bne- 0x0C				 
-li r9,2					
-b loadStage				
-cmpwi r4,0x604		
-bne- 0x0C				
-li r9,2					
-b loadStage				 
-cmpwi r4,0x606		 
-bne- 0x0C				
-li r9,3					
-b loadStage				
-cmpwi r4,0x607		
-bne+ loadStage			  
-li r9,4					
-b loadStage				
+b loadStage							
 
 done:
 

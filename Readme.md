@@ -9,16 +9,16 @@ You can find the gecko codes and GCT cheatfiles under bin/. You can generate you
 
 | File                   | Description                                                                                                   | Version |
 |------------------------|---------------------------------------------------------------------------------------------------------------|---------|
-| Air_Pause       	 | Allows pausing mid-air                                           						 | all     |
+| Air_Pause       	     | Allows pausing mid-air                                           						                     | all     |
 | Cut_Errormessage       | Cuts the default error message to display "!!!" instead of the full error message by 0 terminating it earlier (requires DPad_Functions) | all     |
 | Disable_Blue_Coin_Flag | Prevents the game from setting the blue coin flag, which makes them respawn after reentering the level        | all     |
 | DPad_Functions         | Save state and dialog skip toggle, Switch Nozzles in combination with B                                       | all     |
+| Fast Any%              | Loads stages in Any% order                                                                    				 | all     |
 | FMV_Skips              | Allows to skip all FMVs without having to watch them first                                                    | all     |
 | Ingame_Timer       	 | Ingame Timer (includes own level select)                                               						 | all     |
 | Infinite_Lives         | Locks life count at 99                                                                                        | all     |
 | Level_Select           | Allows to enter levels via exit stage or file select                                                          | all     |
 | Mute_BGM               | Mutes background music (sets volume to 0)                                                                     | all 	   |
-| Fast Any%              | Loads stages in Any% order                                                                    				 | NTSC-U  |
 | Stage_Randomizer       | Loads stages in randomized order                                                                              | NTSC-U  |
 | Replace_Episode_Names_With_ID    | Replaces episode names with the episode number during the demo                                      | NTSC-U  |
 
@@ -31,10 +31,9 @@ Open a Pull request or message me at https://twitter.com/psychonauter or via Dis
 
 Do not combine the following codes together (only use one of them):
 
-| Code A                            | Code B                               |                                                                          
-|-----------------------------------|--------------------------------------|
-| Insert Timer       	 			|  Insert Timer that resets on Delfino |
-| Level Select with Delfino Secrets |  Level Select with Stopwatch Flags   |
+| Code A                | Code B                | Code B                |
+|-----------------------|-----------------------|-----------------------|
+| Ingame_Timer          | Level_Select          | Fast_Any%             |
 
 ## Contributions
 
@@ -50,9 +49,11 @@ The following people/collectives contributed directly or indirectly to the codes
     * Mute BGM,
     * Fast Any%,
     * Replace Episode names with ID
+    * Level Select
 * Noki Doki (aka Qbe Root) https://twitter.com/Qbe_Root
     * Stage Randomizer
     * Pause Mid-Air
+    * Level Select
 * Dan Salvato (aka internetexplorer6) https://twitter.com/dansalvato
     * Level Select, 
     * Save States 
