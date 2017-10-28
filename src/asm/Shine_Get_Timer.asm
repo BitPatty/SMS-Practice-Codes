@@ -265,6 +265,29 @@ b loadStage
 
 done:
 
+lis r3, 0x803E
+ori r3, r3, 0x9710
+lhz r4, 2(r3)
+cmpwi r4, 7680
+beq- noTimer
+cmpwi r4, 1025
+beq- noTimer
+cmpwi r4, 2049
+beq- noTimer
+cmpwi r4, 2308
+beq- noTimer
+cmpwi r4, 1541
+beq- noTimer
+cmpwi r4, 2053
+beq- noTimer
+b 0x14
+
+noTimer:
+
+lis r3, 0x817F
+ori r3, r3, 0x100
+li r4, 0
+sth r4, 0(r3)
 lwz r3, 32(r31)
 
 
