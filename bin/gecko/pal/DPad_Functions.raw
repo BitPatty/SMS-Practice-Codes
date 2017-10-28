@@ -27,5 +27,19 @@ E0000000 00000000
 283FBBF5 00000202
 04261CDC 3BE00005
 E2000001 00000000
+E0000000 00000000
+283FBBF4 00000401
+041B87C8 60000000
+04290A20 60000000
+283FBBF5 00000402
+C61B87C8 801B87E0
+C6290A20 80290A34
+283FBBF5 00000404
+041B87C8 40820018
+04290A20 40820014
+283FBBF5 00000408
+C61B3E6C 801B3E88
+E2000001 00000000
 Left = Save Position with Angle, Right = Load Position, Up = Redirect MessageID, Down = Reset MessageID
 B+Left = Lock Rocket Nozzle, B+Right = Lock Turbo Nozzle, B+Up = Lock Hover Nozzle, B+Down = Release Lock
+X+Left = No FLUDD in secrets, X+Right = FLUDD in all secrets, X+Down = FLUDD in completed secrets (default), X+Up = Unlock Yoshi
