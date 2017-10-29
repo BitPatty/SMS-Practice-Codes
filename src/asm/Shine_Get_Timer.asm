@@ -268,17 +268,17 @@ done:
 lis r3, 0x803E
 ori r3, r3, 0x9710
 lhz r4, 2(r3)
-cmpwi r4, 7680
+cmpwi r4, 0x1E00
 beq- noTimer
-cmpwi r4, 1025
+cmpwi r4, 0x404
 beq- noTimer
-cmpwi r4, 2049
+cmpwi r4, 0x801
 beq- noTimer
-cmpwi r4, 2308
+cmpwi r4, 0x904
 beq- noTimer
-cmpwi r4, 1541
+cmpwi r4, 0x605
 beq- noTimer
-cmpwi r4, 2053
+cmpwi r4, 0x805
 beq- noTimer
 b 0x14
 
@@ -439,17 +439,17 @@ Set Stopwatch difference to 0 unless in stage with existing timer inj@8028E90C
 lis r5, 0x803E
 ori r5, r5, 0x9710
 lhz r5, 2(r5)
-cmpwi r5, 7680
+cmpwi r5, 0x1E00
 beq- 0x34
-cmpwi r5, 1025
+cmpwi r5, 0x404
 beq- 0x2C
-cmpwi r5, 2049
+cmpwi r5, 0x801
 beq- 0x24
-cmpwi r5, 2308
+cmpwi r5, 0x904
 beq- 0x1C
-cmpwi r5, 1541
+cmpwi r5, 0x605
 beq- 0x14
-cmpwi r5, 2053
+cmpwi r5, 0x805
 beq- 0x0C
 li r4, 0
 li r3, 0
