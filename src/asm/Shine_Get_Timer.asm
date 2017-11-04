@@ -15,6 +15,8 @@ lis r5, 0x8040
 ori r5, r5, 0x4484
 lis r6, 0x817F
 ori r6, r6, 0x0100
+li r7, 0
+stw r7, 0xC(r6)
 li r7, 1
 stb r7, 1(r6)
 lbz r4, 2(r3)
