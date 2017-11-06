@@ -1,6 +1,6 @@
 ##
 #
-#	This is the full source of the new (unreleased) ingame timer (NTSC-U)
+#   This is the full source of the new ingame timer (NTSC-U)
 #   The timer starts on the last black frame after the loading screen
 #   and ends on the frame the "Shine Get" animation starts.
 #   This code is inspired by the X-Cam timer of Super Mario 64.

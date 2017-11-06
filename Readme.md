@@ -9,27 +9,30 @@ You can find the gecko codes and GCT cheatfiles under bin/. You can generate you
 
 | File                   | Description                                                                                                   | Version |
 |------------------------|---------------------------------------------------------------------------------------------------------------|---------|
-| Air_Pause       	     | Allows pausing mid-air                                           						                     | all     |
+| Air_Pause              | Allows pausing mid-air                                                                                        | all     |
 | Cut_Errormessage       | Cuts the default error message to display "!!!" instead of the full error message by 0 terminating it earlier (requires DPad_Functions) | all     |
 | Disable_Blue_Coin_Flag | Prevents the game from setting the blue coin flag, which makes them respawn after reentering the level        | all     |
 | DPad_Functions         | Save state and dialog skip toggle, Switch Nozzles in combination with B                                       | all     |
-| Fast Any%              | Loads stages in Any% order                                                                    				 | all     |
+| Fast Any%              | Loads stages in Any% order                                                                                    | all     |
 | FMV_Skips              | Allows to skip all FMVs without having to watch them first                                                    | all     |
-| Ingame_Timer       	 | Ingame Timer (includes own level select)                                               						 | all     |
+| Free_Pause             | Allows pausing mid-air, during cutscenes and activates 'Exit Area' on Plaza                                   | all     |
+| Ingame_Timer           | Ingame Timer (includes own level select, deprecated)                                                          | all     |
 | Infinite_Lives         | Locks life count at 99                                                                                        | all     |
 | Level_Select           | Allows to enter levels via exit stage or file select                                                          | all     |
-| Mute_BGM               | Mutes background music (sets volume to 0)                                                                     | all 	   |
+| Shine_Get_Timer        | Ingame Timer starting on level load and ending on the shine get animation (requires Level Select)             | all     |
+| Shine_Touch_Timer      | Ingame Timer starting on level load and ending on shine touch (requires Level Select)                         | all     |
+| Mute_BGM               | Mutes background music (sets volume to 0)                                                                     | all     |
 | Stage_Randomizer       | Loads stages in randomized order                                                                              | NTSC-U  |
 | Replace_Episode_Names_With_ID    | Replaces episode names with the episode number during the demo                                      | NTSC-U  |
 
 
 ## Contribute 
 
-Open a Pull request or message me at https://twitter.com/psychonauter or via Discord (psychonauter#6318) to receive collaborator status or to add code. 
+Open a Pull request or message me at https://twitter.com/psychonauter or via Discord (psychonauter#6318) to receive collaborator status or to add code.
 
 ## Compatibility
 
-Do not combine the following codes together (only use one of them):
+Do not combine the following codes:
 
 | Code A                | Code B                | Code B                |
 |-----------------------|-----------------------|-----------------------|
@@ -40,33 +43,36 @@ Do not combine the following codes together (only use one of them):
 The following people/collectives contributed directly or indirectly to the codes in this repository:
 
 * Psychonauter (aka BitPatty) https://twitter.com/psychonauter
-    * Ingame Timer, 
-    * Nozzle Switch, 
-    * Disable Blue Coin Flags, 
-    * Save States, 
+    * Ingame Timer,
+    * Shine Get Timer,
+    * Shine Touch Timer,
+    * DPad Functions, 
+    * Disable Blue Coin Flags,
     * FMV Skips, 
     * Infinite Lives, 
     * Mute BGM,
     * Fast Any%,
     * Replace Episode names with ID
     * Level Select
+    * Cut Errormessage
 * Noki Doki (aka Qbe Root) https://twitter.com/Qbe_Root
     * Stage Randomizer
-    * Pause Mid-Air
+    * Free Pause
     * Level Select
+    * DPad Functions
 * Dan Salvato (aka internetexplorer6) https://twitter.com/dansalvato
     * Level Select, 
-    * Save States 
+    * DPad Functions
 * ParadoxKarl https://twitter.com/ParadoxKarl
     * Level Select
 * James0x57 http://www.geckocodes.org/index.php?chid=G&hacker=James0x57
-    * Nozzle Switch 
+    * DPad Functions 
 * Link Master http://www.geckocodes.org/index.php?chid=G&hacker=Link%20Master
-    * Nozzle Switch 
+    * DPad Functions
 * CodeJunkies http://www.geckocodes.org/index.php?chid=G&hacker=Codejunkies
     * Infinite Lives 
-	
-	
-## Button combinations 
+    
+    
+## Button combinations for Level Select
 
 ![Button combinations](http://i.imgur.com/E4Qva3w.png)
