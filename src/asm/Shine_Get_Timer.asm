@@ -372,6 +372,32 @@ lis r3, 0x803A
 
 ====================================================
 
+Stop timer on final platform during Bowser inj@80031f6c
+
+lis r3, 0x803E
+ori r3, r3, 0x9710
+lhz r4, -2(r3)
+cmpwi r4, 0x3C00
+bne+ done 
+lhz r4, 2(r3)
+cmpwi r4, 0x0FFF
+bne+ done
+mr r30, r0
+mflr r31
+lis r3, 0x8056
+ori r3, r3, 0xDD00
+lis r4, 0x8028
+ori r4, r4, 0xE604
+mtlr r4
+blrl
+mtlr r31
+mr r0, r30
+
+done:
+lwz r31, 0x1C(sp)
+
+====================================================
+
 Save/Load Stopwatch inj@8034802C
 
 
