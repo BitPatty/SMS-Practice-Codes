@@ -10,7 +10,6 @@ You can find the gecko codes and GCT cheatfiles under bin/. You can generate you
 | File                   | Description                                                                                                   | Version |
 |------------------------|---------------------------------------------------------------------------------------------------------------|---------|
 | Air_Pause              | Allows pausing mid-air                                                                                        | all     |
-| Cut_Errormessage       | Cuts the default error message to display "!!!" instead of the full error message by 0 terminating it earlier (requires DPad_Functions) | all     |
 | Disable_Blue_Coin_Flag | Prevents the game from setting the blue coin flag, which makes them respawn after reentering the level        | all     |
 | DPad_Functions         | Save state and dialog skip toggle, Switch Nozzles in combination with B                                       | all     |
 | Fast Any%              | Loads stages in Any% order                                                                                    | all     |
@@ -54,12 +53,12 @@ The following people/collectives contributed directly or indirectly to the codes
     * Fast Any%,
     * Replace Episode names with ID
     * Level Select
-    * Cut Errormessage
 * Noki Doki (aka Qbe Root) https://twitter.com/Qbe_Root
     * Stage Randomizer
     * Free Pause
     * Level Select
     * DPad Functions
+    * Fast Any%
 * Dan Salvato (aka internetexplorer6) https://twitter.com/dansalvato
     * Level Select, 
     * DPad Functions
