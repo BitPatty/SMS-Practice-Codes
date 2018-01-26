@@ -152,17 +152,17 @@ checkSpecial:
 cmpwi r7, 64         #if buttons != L 
 bne- 0x10                #continue 
 li r8, 0x1400            #special = airstrip 
-li r9, 0x2E00            #secret = bianco 3 
+li r9, 0x2E00            #secret = bianco 6
 b setupSpecialStage      #jmp setupSpecialStage
 cmpwi r7, 32         #if buttons  != R 
 bne- 0x10                #continue 
 li r8, 0x1500            #special = gelato pipe 
-li r9, 0x3000            #secret = bianco 6 
+li r9, 0x3000            #secret = ricco 4 
 b setupSpecialStage      #jmp setupSpecialStage
 cmpwi r7, 96         #if buttons != LR 
 bne- 0x10                #continue 
 li r8, 0x1600            #special = pachinko 
-li r9, 0x2000            #secret = ricco 4 
+li r9, 0x2000            #secret = gelato 1
 b setupSpecialStage      #jmp setupSpecialStage
 cmpwi r7, 80         #if buttons != ZL 
 bne- 0x10                #continue 
