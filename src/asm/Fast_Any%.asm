@@ -6,16 +6,11 @@ li r0, 0
 stw r0, 12(r3)
 li r0, 1
 stb r0, 1(r3)
-lis r3, 0x803E
-ori r3, r3, 0x9710
 lwz r5, -0x6060(r13)
-lbz r4, 2(r3)
-cmpwi r4, 14
-beq- setupCasino
-cmpwi r4, 13
-beq- setupPinna
+lbz r4, 0x12(r31)
 cmpwi r4, 1
 bgt- done
+stb r0, 0(r3)
 
 checkNextStage:
 
@@ -207,47 +202,8 @@ li r4, 0x200
 
 loadStage:
 
-stw r4, 0(r3)
-stb r4, 0x00DF(r5)
-b done
-
-setupPinna:
-
-lwz r4,-4(r3)
-cmpwi r4,0x500
-bne- 0x0C
-li r4,0xD00
-b loadStage
-cmpwi r4,0x502
-bne- 0x0C
-li r4,0xD01
-b loadStage
-cmpwi r4,0x504
-bne- 0x0C
-li r4,0xD02
-b loadStage
-cmpwi r4,0x505
-bne- 0x0C
-li r4,0xD03
-b loadStage
-cmpwi r4,0x506
-bne- 0x0C
-li r4,0xD04
-b loadStage
-cmpwi r4,0x507
-bne+ done
-li r4,0xD05
-b loadStage
-
-setupCasino:
-
-lbz r4, 5(r5)
-andi. r0, r4, 0x8
-beq+ 0xC
-li r4, 0xE01
-b loadStage
-li r4, 0xE00
-b loadStage
+sth r4, 0x12(r31)
+stb r4, 0xDF(r5)
 
 done:
 
