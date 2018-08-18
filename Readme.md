@@ -21,21 +21,13 @@ You can find the gecko codes and GCT cheatfiles under bin/. You can generate you
 | Shine_Get_Timer        | Ingame Timer starting on level load and ending on the shine get animation (requires Level Select)             | all     |
 | Shine_Touch_Timer      | Ingame Timer starting on level load and ending on shine touch (requires Level Select)                         | all     |
 | Mute_BGM               | Mutes background music (sets volume to 0)                                                                     | all     |
+| Replace_Episode_Names_With_ID    | Replaces episode names with the episode number during the demo                                      | all     |
 | Stage_Randomizer       | Loads stages in randomized order                                                                              | NTSC-U  |
-| Replace_Episode_Names_With_ID    | Replaces episode names with the episode number during the demo                                      | NTSC-U  |
 
 
 ## Contribute 
 
 Open a Pull request or message me at https://twitter.com/psychonauter or via Discord (psychonauter#6318) to receive collaborator status or to add code.
-
-## Compatibility
-
-Do not combine the following codes:
-
-| Code A                | Code B                | Code B                |
-|-----------------------|-----------------------|-----------------------|
-| Ingame_Timer          | Level_Select          | Fast_Any%             |
 
 ## Contributions
 
@@ -59,6 +51,7 @@ The following people/collectives contributed directly or indirectly to the codes
     * Level Select
     * DPad Functions
     * Fast Any%
+    * Replace Episode Names with ID
 * Dan Salvato (aka internetexplorer6) https://twitter.com/dansalvato
     * Level Select, 
     * DPad Functions

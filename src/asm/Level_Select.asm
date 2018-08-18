@@ -1,11 +1,10 @@
 ##
-#
+#   !!!
 #   This level select code is deprecated and should no longer be used.
 #   The file is kept in the repo because of code explanation in the comments.
-#   Please use Level_Select_IGT instead.
+#   Please use the level select found in Shine_Get_Timer.asm instead.
 #
 #   Hotel resets are no longer used since it allows the player to move earlier than usual.
-#
 ##
 
 lis r3, 0x803E            
