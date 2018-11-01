@@ -35,14 +35,17 @@ C60EC0F4 800EC108
 04198784 40820018
 040EC0F4 40820014
 28400D51 00000408
-C6193F58 80193F8C
-C6193F9C 80193FB8
+48000000 8040A398
+1400007C 00000383
 E0000000 00000000
 Left = Save Position with Angle, Right = Load Position, Up = Redirect MessageID, Down = Reset MessageID
 B+Left = Lock Rocket Nozzle, B+Right = Lock Turbo Nozzle, B+Up = Lock Hover Nozzle, B+Down = Release Lock
-X+Left = No FLUDD in secrets, X+Right = FLUDD in all secrets, X+Down = FLUDD in completed secrets (default), X+Up = Unlock Yoshi
+X+Left = No FLUDD in secrets, X+Right = FLUDD in all secrets, X+Down = FLUDD in completed secrets (default), X+Up = Regrab last held object
 
 $Cut Errormessage, replaces default Fallbackmessage with "!!!"
 048D8A7C D6008149
 048D8A80 81498149
 048D8A84 00000000
+
+$Don't reset Mario's grab target
+0411EB10 60000000
