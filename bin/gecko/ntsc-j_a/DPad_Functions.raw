@@ -43,8 +43,7 @@ B+Left = Lock Rocket Nozzle, B+Right = Lock Turbo Nozzle, B+Up = Lock Hover Nozz
 X+Left = No FLUDD in secrets, X+Right = FLUDD in all secrets, X+Down = FLUDD in completed secrets (default), X+Up = Regrab last held object
 
 $Cut Errormessage, replaces default Fallbackmessage with "!!!"
-048CD55C D6008149
-048CD560 81498149
+028CD55E 00028149
 048CD564 00000000
 
 $Don't reset Mario's grab target
