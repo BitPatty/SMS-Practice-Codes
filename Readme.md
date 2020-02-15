@@ -1,3 +1,6 @@
+# This repo is no longer being updated. For up-to-date codes visit the GCT Generator Repository at [https://github.com/BitPatty/gctGenerator/tree/master/codes](https://github.com/BitPatty/gctGenerator/tree/master/codes)
+
+
 ## About
 
 This repository contains practice codes for Super Mario Sunshine. More Info can be found here: https://www.speedrun.com/sms/thread/ue3g9
@@ -24,10 +27,6 @@ You can find the gecko codes and GCT cheatfiles under bin/. You can generate you
 | Replace_Episode_Names_With_ID    | Replaces episode names with the episode number during the demo                                      | all     |
 | Stage_Randomizer       | Loads stages in randomized order                                                                              | NTSC-U  |
 
-
-## Contribute 
-
-Open a Pull request or message me at https://twitter.com/psychonauter or via Discord (psychonauter#6318) to receive collaborator status or to add code.
 
 ## Contributions
 
