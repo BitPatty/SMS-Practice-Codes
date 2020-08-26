@@ -1,4 +1,4 @@
-# This repo is no longer being updated. For up-to-date codes visit the GCT Generator Repository at [https://github.com/BitPatty/gctGenerator](https://github.com/BitPatty/gctGenerator/tree/master/codes)
+# This repo is no longer being updated. For up-to-date codes visit the GCT Generator Repository at [https://github.com/BitPatty/gctGenerator](https://github.com/BitPatty/gctGenerator)
 
 
 ## About
